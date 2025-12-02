@@ -432,7 +432,7 @@ export default function Index() {
         <div className="container mx-auto px-6">
           <div className="flex justify-between items-center">
             <p className="text-sm text-muted-foreground">
-              © 2024 Александр Волков. Все права защищены.
+              © 2024 Анна Никифорова. Все права защищены.
             </p>
             <div className="flex gap-4">
               <Button variant="ghost" size="icon">
