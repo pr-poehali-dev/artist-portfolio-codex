@@ -18,6 +18,22 @@ export default function Navigation({ activeSection, setActiveSection }: Navigati
             Главная
           </button>
           <button
+            onClick={() => setActiveSection('about')}
+            className={`text-sm font-medium transition-colors hover:text-primary ${
+              activeSection === 'about' ? 'text-primary' : 'text-muted-foreground'
+            }`}
+          >
+            Обо мне
+          </button>
+          <button
+            onClick={() => setActiveSection('gallery')}
+            className={`text-sm font-medium transition-colors hover:text-primary ${
+              activeSection === 'gallery' ? 'text-primary' : 'text-muted-foreground'
+            }`}
+          >
+            Галерея
+          </button>
+          <button
             onClick={() => setActiveSection('contacts')}
             className={`text-sm font-medium transition-colors hover:text-primary ${
               activeSection === 'contacts' ? 'text-primary' : 'text-muted-foreground'

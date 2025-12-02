@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import Navigation from '@/components/Navigation';
 import HomeSection from '@/components/HomeSection';
+import AboutSection from '@/components/AboutSection';
+import GallerySection from '@/components/GallerySection';
 import ContactsSection from '@/components/ContactsSection';
 import Footer from '@/components/Footer';
 
@@ -80,6 +82,21 @@ export default function Index() {
       <main className="pt-24 pb-16">
         {activeSection === 'home' && (
           <HomeSection
+            artworks={artworks}
+            selectedStyle={selectedStyle}
+            selectedTechnique={selectedTechnique}
+            selectedYear={selectedYear}
+            setSelectedStyle={setSelectedStyle}
+            setSelectedTechnique={setSelectedTechnique}
+            setSelectedYear={setSelectedYear}
+            resetFilters={resetFilters}
+          />
+        )}
+
+        {activeSection === 'about' && <AboutSection />}
+
+        {activeSection === 'gallery' && (
+          <GallerySection
             artworks={artworks}
             selectedStyle={selectedStyle}
             selectedTechnique={selectedTechnique}
