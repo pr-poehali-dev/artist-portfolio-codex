@@ -275,7 +275,13 @@ export default function Index() {
                   </p>
                 </div>
               </div>
-              <div className="aspect-[3/4] bg-gradient-to-br from-primary/20 to-accent/20 rounded-lg" />
+              <div className="aspect-[3/4] rounded-lg overflow-hidden">
+                <img 
+                  src="https://cdn.poehali.dev/files/9dd3bac5-1773-4542-85cf-b01c2a928fcd.jpg" 
+                  alt="Анна Никифорова"
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </div>
           </div>
         )}
